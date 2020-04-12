@@ -1,0 +1,21 @@
+//test_<%= Method %>.js: Testing Logic.
+
+define([
+  "TestSuite",
+  "log",
+  "<%= Method %>"
+], function(
+  TestSuite,
+  log,
+  <%= Method %>
+) {
+  return TestSuite.extend({
+    "initialize": function() {
+      log("test_<%= Method %> initialized successfully!");
+      var xTestSuite = this;
+      xTestSuite.set( "MethodUnderTest", "<%= Method %>" );
+            
+      xTestSuite.test();
+    }
+  });
+});

@@ -1,0 +1,14 @@
+//<%= Name %>.js: Testing logic.
+
+define([
+	"<%= Method %>"
+], function(
+	<%= Method %>
+) {
+	return {
+		"Name":"<%= Name %>",
+		"Input": "",
+		"Function": <%= Method %>,
+		"ExpectedOutput": ""
+	};
+});
